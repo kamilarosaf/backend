@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Minha Lista de Tarefas</h1>
+    <form action="/add" method="post">
+        <input type="text" name="title" placeholder="Nova tarefa" required>
+        <button type="submit">Adicionar</button>
+    </form>
+    <ul>
+        {% for task in tasks %}
+            <li>
+                {{ task[1] }}
+                <a href="/delete/{{ task[0] }}">❌</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
