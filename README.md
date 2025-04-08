@@ -24,28 +24,28 @@ Este é um projeto de lista de tarefas (To-Do List) desenvolvido com Python (Fla
 ---
 
 ## 🚀 Como rodar localmente
-
-### 1. Clone o repositório
+```text
+1. Clone o repositório
 git clone https://github.com/kamilarosaf/kamilarosaf.git
 cd kamilarosaf/backend
 
-### 2. Crie e ative um ambiente virtual (opcional)
+2. Crie e ative um ambiente virtual (opcional)
   python -m venv venv
 
-### Windows:
+Windows:
   venv\Scripts\activate
 
-### Linux/Mac:
+Linux/Mac:
   source venv/bin/activate
 
-### 3. Instale as dependências
+3. Instale as dependências
   pip install flask
 
-### 4. Execute a aplicação
+ 4. Execute a aplicação
   python app.py
 
 Abra o navegador e acesse: http://localhost:5000
-
+```
 ---
 
 ### ✨ Melhorias Futuras
